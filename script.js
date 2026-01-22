@@ -192,6 +192,7 @@ async function loadProgetti() {
             const files = await response.json();
             console.log(`📁 Trovati ${files.length} file in data/progetti/`);
             
+            
             // Carica ogni file JSON
             for (const file of files) {
                 if (file.name.endsWith('.json')) {
