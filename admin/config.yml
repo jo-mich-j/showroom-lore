@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "img/progetti"
+public_folder: "/img/progetti"
+
+collections:
+  - name: "progetti"
+    label: "Progetti Carpenteria"
+    folder: "data/progetti"
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    extension: json
+    format: json
+    fields:
+      - {label: "Titolo", name: "title", widget: "string", required: true}
+      - {label: "Descrizione", name: "description", widget: "text", required: true}
+      - {label: "Immagine Principale", name: "main_image", widget: "image", required: true}
